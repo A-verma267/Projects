@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    background: linear-gradient(135deg,blue,red);
+    padding: 10px;
+}
+.card{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+}
+.card .todo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 0px 22px ;
+}
+.card .todo img{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+.row {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    background: #edeef0;
+}
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: #edeef0;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 14px;
+}
+.row button{
+    background: #ff5945;
+    border: none;
+    outline: none;
+    padding: 14px 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 700;
+}
+#list-container li{
+    list-style: none;
+    padding: 0px 30px 10px;
+    user-select: none;
+    position: relative;
+}
+#list-container li::before{
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    /* padding: 0px; */
+    background-size: cover;
+    background-position: center;
+    top: 1px;
+    left: 4px;
+}
+#list-container li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+#list-container li.checked::before{
+    background-image: url(images/checked.png);
+}
+li span{
+    position: absolute;
+    right: 0;
+    top: 1px;
+    display: flex;
+    align-self: center;
+    font-size: 19px;
+    padding: 0px 14px;
+    border-radius: 11px;
+    cursor: pointer;
+}
+li span:hover{
+    background-color: #e8e4e4;
+
+}  
