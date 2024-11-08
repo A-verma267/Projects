@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(90deg,rgb(37, 37, 37),black);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    background: linear-gradient(135deg, green, blue);;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 20px;
+    color: white;
+    padding: 3px 10px 29px;
+
+}
+.card .search{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    border-radius: 50%;
+    padding: 8px 11px;
+    border: none;
+    outline: none;
+}
+button img{
+    width: 15px;
+    height: 15px;
+
+}
+.search input{
+    flex: 1;
+    padding: 8px;
+    border-radius: 19px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+}
+.forecast{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 37px;
+}
+.forecast img{
+    width: 104px;
+}
+.temp{
+    font-size: 36px;
+    color: white;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.bottom img{
+    width: 23px;
+    height: 16px;
+    margin-right: 6px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.humidity,.wind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    font-size: 12px;
+}
+.weather{
+    display: none;
+}
+.error{
+    font-size: 13px;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    display: none;
+}
